@@ -1,0 +1,7 @@
+require 'yard'
+
+YARD::Rake::YardocTask.new do |t|
+  t.files   = %w(lib/brake.rb)
+  t.files   = %w(bin/brake)
+  t.options = [ '--list-undoc' ]
+end

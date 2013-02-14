@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Brake
+  
+    &mdash; Documentation by YARD 0.8.3
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (B)</a> &raquo;
+    
+    
+    <span class="title">Brake</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Brake
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Brake</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/brake.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>class brake the heart and soul of brake simply this is a wrapper disigned
+to give the end user some control by being able to pass command line
+options but still having the conviniance of rake tasks The tool has now
+evolved and if used cleverly could be used by anyone</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Author:</p>
+<ul class="author">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Ben Slaughter</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#debug-instance_method" title="#debug (instance method)">- (Object) <strong>debug</strong>(message) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>prints out the passed message if debug/untangle is on.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#genesis-instance_method" title="#genesis (instance method)">- (Object) <strong>genesis</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Starts the Brake Class If there is no information given to brake it will
+rin the 'default task'.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse_command_line_options-instance_method" title="#parse_command_line_options (instance method)">- (hash) <strong>parse_command_line_options</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Parses the options from the command line Converts the parsed information
+into a Hash The Hash is then returned.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#run_rake_task-instance_method" title="#run_rake_task (instance method)">- (Object) <strong>run_rake_task</strong>(task) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Runs the given rake task with the given arguments.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="debug-instance_method">
+  
+    - (<tt>Object</tt>) <strong>debug</strong>(message) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>prints out the passed message if debug/untangle is on</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+61
+62
+63
+64
+65</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/brake.rb', line 61</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_debug'>debug</span><span class='lparen'>(</span> <span class='id identifier rubyid_message'>message</span> <span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='ivar'>@untangle</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_message'>message</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="genesis-instance_method">
+  
+    - (<tt>Object</tt>) <strong>genesis</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Starts the Brake Class If there is no information given to brake it will
+rin the 'default task'</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/brake.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_genesis'>genesis</span>
+  <span class='comment'># creates the default arguments
+</span>  <span class='comment'># -P Disables profiles, we no longer need it as all data is given at command line
+</span>  <span class='comment'># -s removes the extra source code line no note displayed in the command line
+</span>  <span class='ivar'>@arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='symbol'>:req</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-P -s</span><span class='tstring_end'>&quot;</span></span> <span class='rbrace'>}</span>
+  <span class='comment'># Untangle is false untill the options parser has run
+</span>  <span class='ivar'>@untangle</span> <span class='op'>=</span> <span class='kw'>false</span>
+  <span class='comment'># Brake can run Its task several times
+</span>  <span class='ivar'>@taskIterations</span> <span class='op'>=</span> <span class='int'>1</span>
+  <span class='comment'># This is the code that is returned by brake
+</span>  <span class='comment'># If any of the tests return a 1 it will return 1
+</span>  <span class='ivar'>@returnCode</span> <span class='op'>=</span> <span class='int'>0</span>
+
+  <span class='comment'># Runs the options parser, Arguments and Untangle are now inst variables
+</span>  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_parse_command_line_options'>parse_command_line_options</span>
+
+  <span class='comment'># Outputs the brake version at runtime
+</span>  <span class='kw'>if</span> <span class='ivar'>@brakeVersion</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Brake Version:</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='const'>Gem</span><span class='period'>.</span><span class='id identifier rubyid_loaded_specs'>loaded_specs</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>brake</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_version'>version</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span><span class='lparen'>(</span> <span class='const'>ARGV</span> <span class='rparen'>)</span>
+  <span class='comment'># Default is assigned to the ARGV if there is no task given
+</span>  <span class='const'>ARGV</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>default</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='const'>ARGV</span> <span class='op'>==</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='comment'># Brake only runs one task at a time
+</span>  <span class='ivar'>@taskIterations</span><span class='period'>.</span><span class='id identifier rubyid_times'>times</span> <span class='kw'>do</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_run_rake_task'>run_rake_task</span><span class='lparen'>(</span> <span class='const'>ARGV</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># This code is commented out to keep things simple
+</span>  <span class='comment'># Brake will execute the first task and then drop everything else
+</span>  <span class='comment'># This stops incorrect options causing problems
+</span>  <span class='comment'># ARGV.each do | task |
+</span>  <span class='comment'>#   self.debug( task )
+</span>  <span class='comment'>#   self.run_rake_task( task )
+</span>  <span class='comment'># end
+</span>  <span class='kw'>return</span> <span class='ivar'>@returnCode</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse_command_line_options-instance_method">
+  
+    - (<tt>hash</tt>) <strong>parse_command_line_options</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Parses the options from the command line Converts the parsed information
+into a Hash The Hash is then returned</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>arguments a hash containg the parsed and  data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/brake.rb', line 71</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_command_line_options'>parse_command_line_options</span>
+  <span class='kw'>begin</span>
+    <span class='comment'># parses the options from the command line
+</span>    <span class='const'>OptionParser</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opts'>opts</span><span class='op'>|</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_banner'>banner</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nBrake, A Cucumber options parser wrapper for Rake, because, cake was already taken!, Give Rake a Brake.\nUsage: brake &lt;task&gt; [options]</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Cucumber options:</span><span class='tstring_end'>&quot;</span></span>
+       <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-t</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--tags @high,@login</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>Array</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Array:  A list of all tagged test to be run</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:tags</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:tags</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--tags </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>,</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-d</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--dry-run</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: Invokes the formatters without executing steps</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:dry_run</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--dry-run</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-v</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--verbose</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: Show the files and features loaded</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:verbose</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--verbose</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-f</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--format pretty</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>String</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>String: How to format the output (Default: pretty)</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:format</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--format </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-S</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--strict</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: Fail if there are and undefined or pending steps</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:strict</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--strict</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-n</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--name featureName</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>String</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>String: Only execute features with a partial match to the given name</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:name</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--name </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-g</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--guess</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: Guess best match for ambiguous steps</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:guess</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--guess</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-x</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--expand</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: Expand scenario outline tables in output</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:expand</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--expand</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Global options:</span><span class='tstring_end'>&quot;</span></span> 
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-e</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--enviroment release</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>String</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>String: The enviroment to run the tests against eg Release</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:env</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ENVIRONMENT=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-l</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--log_level debug</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>String</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>String: The log output level debug|info</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:log_level</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>LOGLEVEL=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-c</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--controller chrome</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>String</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>String: The type of controller to run (API, Chrome, Safari)</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:controller</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CONTROLLER=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--[no-]headless</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: To turn on/off headless mode (only works on Linux!)</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:headless</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>HEADLESS=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--[no-]cleanup</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: To turn on/off setup cleanup</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:cleanup</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CLEANUP=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--[no-]database</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: Defines whether to log out to the database</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:database</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DATABASE=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--[no-]jenkins</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: Defines whether to log out to the jenkins specific database</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:database</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DATABASE=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:jenkins</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>JENKINS=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>      
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--retries 3</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>String</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>String: The number of retries to perform on element methods</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:retries</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>RETRIES=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--timeouts 10</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>String</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>String: The length of the timeouts on element methods</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:timeouts</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>TIMEOUTS=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Web options:</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-s</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--screen 1280,1024</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>Array</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Array:  The width,hight of the browser window</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>!=</span> <span class='int'>2</span>
+          <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Incorrect number of args for screen: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+          <span class='id identifier rubyid_exit'>exit</span>
+        <span class='kw'>end</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:screen</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SCREENWIDTH=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_content'> SCREENHEIGHT=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-p</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--position 0,0</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>Array</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Array:  The x,y coords of the browser 0,0 top left</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&gt;</span> <span class='int'>2</span>
+          <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Incorrect number of args for position: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+          <span class='id identifier rubyid_exit'>exit</span>
+        <span class='kw'>end</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:position</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>XPOSITION=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_content'> YPOSITION=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Browser options:</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-H</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--[no-]highlight</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: To turn on/off the highlight of elements</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@arguments</span><span class='lbracket'>[</span><span class='symbol'>:highlight</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>HIGHLIGHT=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_separator'>separator</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Brake options:</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-V</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--version</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: Output the current version of brake</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@brakeVersion</span> <span class='op'>=</span> <span class='id identifier rubyid_opt'>opt</span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-I</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--iterate 5</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='const'>String</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Int: Number of times to run the task</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@taskIterations</span> <span class='op'>=</span> <span class='id identifier rubyid_opt'>opt</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-U</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--[no-]untangle</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bool: Turns Debug on/off</span><span class='tstring_end'>&quot;</span></span> <span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_opt'>opt</span><span class='op'>|</span>
+        <span class='ivar'>@untangle</span> <span class='op'>=</span> <span class='id identifier rubyid_opt'>opt</span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on_tail'>on_tail</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-h</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>--help</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You're Looking at it</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+        <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_opts'>opts</span>
+        <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nFor further assistance please contact Ben Slaughter or Jonathan Chrisp</span><span class='tstring_end'>&quot;</span></span>
+        <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bens@brandwatch.com or jonathan@brandwatch.com</span><span class='tstring_end'>&quot;</span></span>
+        <span class='id identifier rubyid_exit'>exit</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span><span class='period'>.</span><span class='id identifier rubyid_parse!'>parse!</span> <span class='comment'># options parser
+</span>  <span class='kw'>rescue</span> <span class='const'>OptionParser</span><span class='op'>::</span><span class='const'>InvalidOption</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span><span class='lparen'>(</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_backtrace'>backtrace</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='rparen'>)</span>
+    <span class='id identifier rubyid_exit'>exit</span>
+  <span class='kw'>end</span> <span class='comment'># begin
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="run_rake_task-instance_method">
+  
+    - (<tt>Object</tt>) <strong>run_rake_task</strong>(task) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Runs the given rake task with the given arguments</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>task</span>
+      
+      
+        <span class='type'>(<tt>string</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>This is the name of the rake task to be invoked</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/brake.rb', line 185</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_run_rake_task'>run_rake_task</span><span class='lparen'>(</span> <span class='id identifier rubyid_task'>task</span> <span class='rparen'>)</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>running task: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_task'>task</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span><span class='lparen'>(</span> <span class='ivar'>@arguments</span> <span class='rparen'>)</span>
+  <span class='kw'>begin</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_task'>task</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>default</span><span class='tstring_end'>'</span></span>
+      <span class='const'>Rake</span><span class='op'>::</span><span class='const'>Task</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>default</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span> <span class='ivar'>@arguments</span> <span class='rparen'>)</span>
+    <span class='kw'>else</span>
+      <span class='const'>Rake</span><span class='op'>::</span><span class='const'>Task</span><span class='lbracket'>[</span><span class='id identifier rubyid_task'>task</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span> <span class='ivar'>@arguments</span> <span class='rparen'>)</span>
+    <span class='kw'>end</span> <span class='comment'># if
+</span>    
+  <span class='comment'># This caused me some problems while running tasks
+</span>  <span class='comment'># There is no raise as several tasks may be run
+</span>  <span class='comment'># and due to the design requierments of the wrapper I do not want the code to quit
+</span>  <span class='kw'>rescue</span> <span class='const'>RuntimeError</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='ivar'>@returnCode</span> <span class='op'>=</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Brake Aborted!</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span>
+    <span class='kw'>if</span> <span class='ivar'>@untangle</span>
+      <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_backtrace'>backtrace</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span> <span class='id identifier rubyid_line'>line</span> <span class='op'>|</span>
+        <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span><span class='lparen'>(</span> <span class='id identifier rubyid_line'>line</span> <span class='rparen'>)</span>
+      <span class='kw'>end</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>( For full backtrace run again with --untangle )</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span> <span class='comment'># begin
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Feb 14 22:26:34 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.3 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>

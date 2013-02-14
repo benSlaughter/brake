@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.3
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'>
+<p>README A Brandwatch rake wrapper, Brake</p>
+
+<p>Brake, A Cucumber options parser wrapper for Rake, because, cake was
+already taken!, Give Rake a Brake. Usage: brake &lt;task&gt; [options]</p>
+
+<p>Cucmber options:</p>
+
+<pre class="code ruby"><code>-t, --tags @high,@login          Array:  A list of all tagged test to be run
+-d, --dry-run                    Bool: Invokes the formatters without executing steps
+-v, --verbose                    Bool: Show the files and features loaded
+-f, --format pretty              String: How to format the output (Default: pretty)
+-S, --strict                     Bool: Fail if there are and undefined or pending steps
+-n, --name featureName           String: Only execute features with a partial match to the given name
+-g, --guess                      Bool: Guess best match for ambiguous steps
+-x, --expand                     Bool: Expand scenario outline tables in output</code></pre>
+
+<p>Global options:</p>
+
+<pre class="code ruby"><code>-e, --enviroment release         String: The enviroment to run the tests against eg Release
+-l, --log_level debug            String: The log output level debug|info
+-c, --controller chrome          String: The type of controller to run (API, Chrome, Safari)
+    --[no-]headless              Bool: To turn on/off headless mode (only works on Linux!)
+    --[no-]cleanup               Bool: To turn on/off setup cleanup
+    --[no-]database              Bool: Defines whether to log out to the database
+    --[no-]jenkins               Bool: Defines whether to log out to the jenkins specific database
+    --retries 3                  String: The number of retries to perform on element methods
+    --timeouts 10                String: The length of the timeouts on element methods</code></pre>
+
+<p>Web options:</p>
+
+<pre class="code ruby"><code>-s, --screen 1280,1024           Array:  The width,hight of the browser window
+-p, --position 0,0               Array:  The x,y coords of the browser 0,0 top left</code></pre>
+
+<p>Browser options:</p>
+
+<pre class="code ruby"><code>-H, --[no-]highlight             Bool: To turn on/off the highlight of elements</code></pre>
+
+<p>Brake options:</p>
+
+<pre class="code ruby"><code>-V, --version                    Bool: Output the current version of brake
+-I, --iterate 5                  Int: Number of times to run the task
+-U, --[no-]untangle              Bool: Turns Debug on/off
+-h, --help                       You're Looking at it</code></pre>
+
+<p>For further assistance please contact Ben Slaughter or Jonathan Chrisp
+bens@brandwatch.com or jonathan@brandwatch.com</p>
+
+<p>Release Notes: 0.1.0 Class structure created</p>
+
+<p>0.1.6 Code cleanup Changed the names so that all the task names are strings
+rather than half symbol and half strings</p>
+
+<p>0.2.0 Added this readme file Cleaned up the debug code Added the Version
+output to display the current version number Added the debug method so that
+the code looks cleaner and easier to understand Added the RuntimeError
+handling to mimic the same rake functionality Moved rake requier to be
+called before the Brakefile load</p>
+
+<p>0.2.1 Ben - Added cucumber dry run Ben - Added -s as default (removes
+source)</p>
+
+<p>0.2.2 Jon - Updated API task to run release as default</p>
+
+<p>0.2.3 Ben - Removed '--require features' from the default args so now only
+-P disable profiles and -s disable source code line numbers Ben - Removed
+platform, this is no longer required</p>
+
+<p>0.2.4 Ben - Some typos in comments and improved readme and code comments
+for yard docs Jon - Added headless, retries, highlight and cleanup options</p>
+
+<p>0.3.0 Ben - Improved code, Cleaned up options parser, now a single block of
+code Ben - There are no more pre included tasks, it is either default or
+user entered Ben - Error checking on screen and position Ben - Brake passes
+a hash of arguments to the rake task Ben - Cucumber options added and task
+iterations</p>
+
+<p>0.3.0 Ben - Format was missing the layout definition in the options parser</p>
+
+<p>0.3.2 Ben - Added cucumber options: strict, name, guess, expand</p>
+
+<p>0.3.3 Ben - Added Docs and fixed a few comment typos and changes for docs
+Ben - Added brake version option</p>
+
+<p>0.3.4 Ben - Added the exit code to mimic what is returned from the task Ben
+- Fixed test iterate</p>
+
+<p>0.3.5 Jon - Added the database option Jon - Added the jenkins option Jon -
+Cleaned up spelling errors</p>
+
+<p>0.3.6  Jon - Added database flag to jenkins option so no longer to include
+database flag also</p>
+
+<p>0.3.7 Jon - Updated gemspec, added new homepage as now on GitHub, created
+and changed license to MIT and added .gitignore file</p>
+
+<p>END</p>
+</div></div>
+
+    <div id="footer">
+  Generated on Thu Feb 14 22:26:34 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.3 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>
