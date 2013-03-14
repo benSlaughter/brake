@@ -1,12 +1,12 @@
 <a href='https://gemnasium.com/benSlaughter/brake'><img src="https://gemnasium.com/benSlaughter/brake.png" alt="Dependency Status" /></a>
 
-README
-A Brandwatch rake wrapper, Brake
+# README
+## A Brandwatch rake wrapper, Brake
 
 Brake, A Cucumber options parser wrapper for Rake, because, cake was already taken!, Give Rake a Brake.
 Usage: brake <task> [options]
 
-Cucmber options:
+### Cucumber options:
     -t, --tags @high,@login          Array:  A list of all tagged test to be run
     -d, --dry-run                    Bool: Invokes the formatters without executing steps
     -v, --verbose                    Bool: Show the files and features loaded
@@ -16,7 +16,7 @@ Cucmber options:
     -g, --guess                      Bool: Guess best match for ambiguous steps
     -x, --expand                     Bool: Expand scenario outline tables in output
 
-Global options:
+### Global options:
     -e, --enviroment release         String: The enviroment to run the tests against eg Release
     -l, --log_level debug            String: The log output level debug|info
     -c, --controller chrome          String: The type of controller to run (API, Chrome, Safari)
@@ -27,14 +27,14 @@ Global options:
         --retries 3                  String: The number of retries to perform on element methods
         --timeouts 10                String: The length of the timeouts on element methods
 
-Web options:
+### Web options:
     -s, --screen 1280,1024           Array:  The width,hight of the browser window
     -p, --position 0,0               Array:  The x,y coords of the browser 0,0 top left
 
-Browser options:
+### Browser options:
     -H, --[no-]highlight             Bool: To turn on/off the highlight of elements
 
-Brake options:
+### Brake options:
     -V, --version                    Bool: Output the current version of brake
     -I, --iterate 5                  Int: Number of times to run the task
     -U, --[no-]untangle              Bool: Turns Debug on/off
@@ -43,7 +43,8 @@ Brake options:
 For further assistance please contact Ben Slaughter or Jonathan Chrisp
 bens@brandwatch.com or jonathan@brandwatch.com
 
-Release Notes:
+## Release Notes
+
 0.1.0
 Class structure created
 
